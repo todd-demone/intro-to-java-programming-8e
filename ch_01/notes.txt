@@ -1,0 +1,48 @@
+Intro to Java Programming 8e
+Chapter 01 - Intro to Computers, Programs and Java
+
+1.5 Java, World Wide Web, and Beyond
+
+1.6 The Java Language specification, API, JDK and IDE
+
+- Java Language Specificaton - defines syntax and semantics
+- API - predefined classes and interfaces
+- 3 editions of Java - SE (client-side, applets), EE (server-side, servlets and JSPs) and ME
+  (mobile)
+- Java SE 6 
+- JDK 1.6
+
+- reserved words - class, public, static, void
+
+1.7 A Simple Java Program
+
+1.8 Creating, Compiling and Executing a Java Program
+
+- javac - compile source code file (high level lang) into bytecode file (low level lang)
+- java - run/execute bytecode
+- bytecode is interpreted by JVM
+
+- interpreting bytecode - bytecode interpreted into the target machine language one at a time (are
+  there exceptions now - eg JIT?)
+
+1.9 (GUI) Displaying Text in a Message Dialog Box
+
+- package - javax.swing
+- class   - JOptionPane
+- method  - showMessageDialog(null, "Welcome to Java!")
+
+- import javax.swing.JOptionPane
+- import statement means you don't have to write javax.swing.JOptionPane.showMessageDialog(..)
+  everywhere
+
+- static method - invoked by ClassName.methodName(arg1, arg2, ... argN)
+
+- import statements - 2 types:
+    - specific import - specify a single class eg import javax.swing.JOptionPane;
+    - wildcard import - import all classes in a package eg import javax.swing.*;
+
+- classes that don't have to be imported
+- e.g. System class in System.out.println
+- Classes in java.lang package are implicitly imported
+
+
