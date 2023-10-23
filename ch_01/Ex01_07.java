@@ -7,18 +7,27 @@ package ch_01;
  */
 public class Ex01_07 {
   public static void main(String[] args) {
+
     final double NUMERATOR = 1.0;
-    int denominator; 
     final int MAX_DENOMINATOR = 13;
     final int DENOMINATOR_STEP = 2;
+
+    int denominator; 
     double approxPi = 0.0; 
     boolean isAddition = true;
 
+    // Calculate the portion of the PI formula that is inside the parentheses:
     for (denominator = 1; denominator <= MAX_DENOMINATOR; denominator = denominator + DENOMINATOR_STEP) {
+
       approxPi = approxPi + (isAddition ? (NUMERATOR / denominator) : -(NUMERATOR / denominator));
+
+      // toggle between addition and subtraction
       isAddition = !isAddition;
     }
+
+    // To complete the calculation, multiply the value inside the parentheses by 4
     approxPi = approxPi * 4;
+
     System.out.println(approxPi);
   }
 }
